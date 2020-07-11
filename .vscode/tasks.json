@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "tasks": [
+        {
+            "label": "compila",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk-14.0.1\\bin\\javac.exe"
+            },
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": [
+                "$lessc"
+            ]
+        },
+        {
+            "label": "ejecuta",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk-14.0.1\\bin\\java.exe"
+            },
+            "args": [
+                "${fileBasenameNoExtension}"
+            ]
+        }
+    ]
+}
