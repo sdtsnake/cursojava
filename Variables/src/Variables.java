@@ -6,19 +6,12 @@
 public class Variables {
 
     public static void main(String[] args) {
-        var usuario = "snake";
-        var titulo = "Tecnologo Ingeniera de Sistemas";
-
-        var union = titulo + " " + usuario;
-        System.out.println("union = " + union);
-
-        var i = 3;
-        var j = 4;
-
-        System.out.println(i + j);
-        System.out.println(i + j + " " + usuario);
-        System.out.println(usuario + i + j);
-        System.out.println(usuario + (i + j));
-
+        var nombre = "snake";
+        
+        System.out.println("Nueva Linea: \n" + nombre);
+        System.out.println("Tabulador: \t" + nombre);
+        System.out.println("Retroceso: \b\b" + nombre);
+        System.out.println("Comilla simple : \'" + nombre + "\'");       
+        System.out.println("Comilla doble : \"" + nombre + "\"");
     }
 }
