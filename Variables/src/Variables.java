@@ -8,22 +8,27 @@ import java.util.Scanner;
 public class Variables {
 
     public static void main(String[] args) {
-        boolean varBoolean = true;        
-        if(varBoolean){
-            System.out.println("la bandera es verdadera");
-        }
-        else{
-            System.out.println("la bandera es falsa");
-        }
+        //convertir un tipo String a Int
+        var edad = Integer.parseInt("20");
+        //var edad = "20";
+        System.out.println("edad = " + (edad + 1));
         
-        var edad = 10;
-        var esAdulto = edad >= 18;
+        var valorPi = Double.parseDouble("3.1416");
+        System.out.println("valorPi = " + valorPi);
         
-        if(esAdulto){
-            System.out.println("Eres mayor de edad");
-        }
-        else{
-            System.out.println("Eres menor de edad");
-        }
+          var consola = new Scanner(System.in);
+//        System.out.println("Proporciona tu edad:");
+//        edad = Integer.parseInt(consola.nextLine());
+//        System.out.println("Su edad es :"  + edad);
+        
+        var edadTexto = String.valueOf(10);
+        System.out.println("edadTexto = " + edadTexto);
+        
+        var caracter = "hola".charAt(2);
+        System.out.println("caracter = " + caracter);
+        System.out.println("Proporcia un caracter");
+        caracter = consola.nextLine().charAt(0);
+        System.out.println("caracter = " + caracter);
+        
     }
 }
