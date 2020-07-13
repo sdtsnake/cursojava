@@ -8,19 +8,28 @@ import java.util.Scanner;
 public class Variables {
 
     public static void main(String[] args) {
-        var capturador = new Scanner(System.in);
-        System.out.println("Proporciona el nombre:");
-        var nombre = String.valueOf(capturador.nextLine());
-        System.out.println("Proporciona el id:");
-        var numeroId = Integer.parseInt(capturador.nextLine());
-        System.out.println("Proporciona el precio:");
-        var precio = Double.parseDouble(capturador.nextLine());
-        System.out.println("Envio Gratuito:");
-        boolean envioGratuito = Boolean.parseBoolean(capturador.nextLine());
+        int a = 100, b = 2;
+        {
+            var resultado = a + b;
+            System.out.println("La suma de a + b = " + resultado);
 
-        System.out.println(nombre + " #" + numeroId);
-        System.out.println("Precio : $" + precio);
-        System.out.println("Envio Gratuito :" + envioGratuito);
+            resultado = a - b;
+            System.out.println("La suma de a - b = " + resultado);
+
+            resultado = a * b;
+            System.out.println("La suma de a * b = " + resultado);
+        }
+        var resultado = (float) a / b;
+        System.out.println("La suma de a / b = " + resultado);
+
+        resultado = a % b;
+        System.out.println("Residuo = " + resultado);
+
+        if (a % 2 == 0) {
+            System.out.println("Es numero par");
+        } else {
+            System.out.println("Es numnero impar");
+        }
 
     }
 }
