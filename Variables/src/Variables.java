@@ -18,7 +18,7 @@ public class Variables {
         System.out.println("Envio Gratuito:");
         boolean envioGratuito = Boolean.parseBoolean(capturador.nextLine());
 
-        System.out.println(nombre + "#" + numeroId);
+        System.out.println(nombre + " #" + numeroId);
         System.out.println("Precio : $" + precio);
         System.out.println("Envio Gratuito :" + envioGratuito);
 
