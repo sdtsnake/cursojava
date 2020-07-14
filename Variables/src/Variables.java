@@ -9,42 +9,37 @@ public class Variables {
 
     public static void main(String[] args) {
         var a = 3;
-        var b = -a;
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        var c = true;
-        var d = !c;
+        var b = 2;
+        
+        var c = (a == b);
         System.out.println("c = " + c);
+        
+        var d = (a != b);
         System.out.println("d = " + d);
-
-        {
-            System.out.println("Incrementos");
-            System.out.println("===========");
-            
-            var e = 3;
-            var f = ++e; //pre incremento
-            System.out.println("e = " + e);
-            System.out.println("f = " + f);
-
-            var g = 5;
-            var h = g++; //post incremento
-            System.out.println("g = " + g);
-            System.out.println("h = " + h);
+        
+        var cadena1 = "Hola";
+        var cadena2 = "Adios";
+        var e = cadena1 == cadena2;
+        System.out.println("e = " + e);
+        
+        var f = cadena1.equals(cadena2);
+        System.out.println("e = " + e);   
+        
+        var g = a >= b;
+        System.out.println("g = " + g);
+        if(a % 2 == 0){
+            System.out.println("Es numero par");
+        }else{
+            System.out.println("Es numero impar");
         }
-        {
-            System.out.println("dectementos");
-            System.out.println("===========");
-            
-            var e = 2;
-            var f = --e; //pre decremento
-            System.out.println("e = " + e);
-            System.out.println("f = " + f);
-
-            var g = 4;
-            var h = g--; //post decremento
-            System.out.println("g = " + g);
-            System.out.println("h = " + h);
-        }
-
+        
+         var edad = 30;
+         var adulto = 18;
+         
+         if (edad > adulto){
+             System.out.println("Es mayor de edad");
+         }else{
+             System.out.println("Es menor de edad");
+         }
     }
 }
