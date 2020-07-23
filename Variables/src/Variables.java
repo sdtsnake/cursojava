@@ -1,4 +1,6 @@
 
+import java.util.Scanner;
+
 /**
  *
  * @author snake
@@ -6,11 +8,12 @@
 public class Variables {
 
     public static void main(String[] args) {
-        var resultado = (1 > 2) ? "verdadero" : "falso" ;
-        System.out.println("resultado = " + resultado);
-        
-        var numero = 9;
-        resultado = (numero % 2 == 0) ? "numero par" : "numero impar";
-        System.out.println("resultado = " + resultado);    
+        var capturador = new Scanner(System.in);
+        System.out.println("Proporciona el numero1:");
+        int numero1 = Integer.parseInt(capturador.nextLine());
+        System.out.println("Proporciona el numero2:");
+        int numero2 = Integer.parseInt(capturador.nextLine());
+        int resultado = (numero1 > numero2) ? numero1 : numero2;
+        System.out.println("El numero mayor es: " + resultado);
     }
 }
