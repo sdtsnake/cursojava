@@ -1,6 +1,4 @@
 
-import java.util.Scanner;
-
 /**
  *
  * @author snake
@@ -8,14 +6,29 @@ import java.util.Scanner;
 public class Variables {
 
     public static void main(String[] args) {
-        var x = 5;
-        var y = 10;
-        var z = ++x + y--;
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
+        var condicion = false;
+        if (condicion) {
+            System.out.println("La condicon es verdadera");
+        } else {
+            System.out.println("La caondiocn es falsa");
+        }
+
+        var numero = 5;
+       
+        var numeroTexto="";
         
-        var resultado = (4 + 5) * 6 / 3;
-        System.out.println("resultado = " + resultado);
+        if (numero == 1) {
+            numeroTexto = "Numero uno";
+        } else if (numero == 2) {
+            numeroTexto = "Numeor dos";
+        } else if (numero == 3){
+            numeroTexto = "Numero tres";
+        } else if (numero == 4){
+            numeroTexto = "Numero cuatro";
+        }else {
+            numeroTexto = "Numero no encotrado";
+        }
+        System.out.println("numeroTexto = " + numeroTexto);
     }
 }
+
