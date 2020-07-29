@@ -8,8 +8,21 @@ import java.util.Scanner;
 public class Variables {
 
     public static void main(String[] args) {
-        for (int contador = 0; contador < 3; contador++) {
-            System.out.println("contador = " + contador);
+        {
+            for (int contador = 1; contador <= 10; contador++) {
+                if (contador % 2 == 0) {
+                    System.out.println("contador = " + contador);
+                    break;
+                }
+            }
+        }
+        {
+            for (int contador = 10; contador <= 20; contador++) {
+                if (contador % 2 != 0) {                    
+                    continue;
+                }
+                System.out.println("contador = " + contador);
+            }
         }
     }
 }
