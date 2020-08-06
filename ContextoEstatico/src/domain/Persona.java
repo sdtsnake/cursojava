@@ -12,7 +12,8 @@ public class Persona {
 
     public Persona(String nombre) {
         this.nombre = nombre;
-        this.idPersona = Persona.contatorPesona++;
+        Persona.contatorPesona ++;
+        this.idPersona = Persona.contatorPesona;
     }
 
     public int getIdPersona() {
